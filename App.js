@@ -5,13 +5,13 @@ export default function App() {
   const [lista, setLista] = useState([]);
   const n = Number(v);
 
-  // validación simple
+  
   const esNum = v.trim() !== "" && !isNaN(n);
 
   const agregar = () => {
     if (!esNum) return alert("Debe ingresar un número");
-    setLista([...lista, n]); // agrega el número a la tabla
-    setV("");                // limpia el input
+    setLista([...lista, n]); 
+    setV("");                
   };
 
   return (
